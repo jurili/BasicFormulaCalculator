@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" href="math.ico">
+		<title>Math Calculation Form</title>
+	</head>
+	<body>
+		<h1>Math Calculation Form</h1>
+		<div>
+			<fieldset>
+				<legend>Newton's Second Law Force Calculator</legend>
+				<label for="m">Mass:</label>
+				<input type="text" id="m" name="m" placeholder="Enter mass here"><br>
+				<label for="a">Acceleration:</label>
+				<input type="text" id="a" name="a" placeholder="Enter acceleration here"><br><br>
+				<input type="button" value="Calculate" onclick="calculateForce()"><br><br>
+				<label for="f">Force:</label>
+				<input type="text" id="f" name="f" placeholder="Calculated force" disabled>
+			</fieldset>
+		</div>
+		<hr>
+		<div>
+			<fieldset>
+				<legend>Kinematic Displacement Calculator</legend>
+				<label for="v">Velocity:</label>
+				<input type="text" id="v" name="v" placeholder="Enter velocity here"><br>
+				<label for="t">Time:</label>
+				<input type="text" id="t" name="t" placeholder="Enter time here"><br>
+				<label for="a2">Acceleration:</label>
+				<input type="text" id="a2" name="a2" placeholder="Enter acceleration here"><br><br>
+				<input type="button" value="Calculate" onclick="calculateDisplacement()"><br><br>
+				<label for="d">Displacement:</label>
+				<input type="text" id="d" name="d" placeholder="Calculated displacement" disabled>
+			</fieldset>
+		</div>
+		<hr>
+		<div>
+			<fieldset>
+				<legend>Quadratic Formula Calculator</legend>
+				<label for="a3">A:</label>
+				<input type="text" id="a3" name="a3" placeholder="Enter a-value here"><br>
+				<label for="b">B:</label>
+				<input type="text" id="b" name="b" placeholder="Enter b-value here"><br>
+				<label for="c">C:</label>
+				<input type="text" id="c" name="c" placeholder="Enter c-value here"><br><br>
+				<input type="button" value="Calculate" onclick="calculateQuadratic()"><br><br>
+				<label for="pos">Positive Root:</label>
+				<input type="text" id="pos" name="pos" placeholder="Calculated positive root" disabled><br>
+				<label for="neg">Negative Root:</label>
+				<input type="text" id="neg" name="neg" placeholder="Calculated negative root" disabled>
+			</fieldset>
+		</div>
+		<hr>
+		<div>
+			<fieldset>
+				<legend>Annuity Calculator</legend>
+				<label for="c2">Payment amount:</label>
+				<input type="text" id="c2" name="c2" placeholder="Enter payment amount here"><br>
+				<label for="r">Interest rate:</label>
+				<input type="text" id="r" name="r" placeholder="Enter interest rate here"><br>
+				<label for="n">Periods:</label>
+				<input type="text" id="n" name="n" placeholder="Enter period amount here"><br><br>
+				<input type="button" value="Calculate" onclick="calculateAnnuity()"><br><br>
+				<label for="p">Lump Sum:</label>
+				<input type="text" id="p" name="p" placeholder="Calculated lump sum" disabled>
+			</fieldset>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
